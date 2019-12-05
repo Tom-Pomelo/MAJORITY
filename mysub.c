@@ -316,8 +316,8 @@ void forward_check_by_four(int n) {
     int cnt_two = 0, cnt_four = 0;
 
     for (int i = 0; i < groups; ++i) {
-        int a[4] = {groups_with_start_index[i], groups_with_start_index[i] + 1, groups_with_start_index[i] + 2,
-                    groups_with_start_index[i] + 3};
+        int a[4] = {groups_with_start_index[i], groups_with_start_index[i] + 1,
+                    groups_with_start_index[i] + 2, groups_with_start_index[i] + 3};
         int res = QCOUNT(1, a);
         switch (res) {
             case 0: {
